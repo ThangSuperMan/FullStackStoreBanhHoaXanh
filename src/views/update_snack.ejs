@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm bánh mới</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/CSS/add_snack.css">
+</head>
+<body>
+    <div class="container">
+        <a href="/admin" class="new-snack">
+            <i class="fas fa-chevron-left"></i>
+            <span class="title">Tất cả bánh</span>
+        </a>
+
+        <h3>Trang cập nhật thông tin bánh</h3>
+        
+        <% snack.forEach((snack) => { %>
+        <form action="/admin/edit_snack" method="POST" enctype="multipart/form-data" class="form">
+            <input type="hidden" name="snackId" value="<%= snack.id %>" >
+            <div class="form-group">
+                <label for="name-snack">Tên bánh</label>
+                <input type="text" name="nameSnack" value="<%= snack.nameSnack %>" id="name-snack" placeholder="Tên bánh">
+            </div>
+            <div class="form-group">
+                <label for="price-snack">Gía bánh</label>
+                <input type="text" name="priceSnack" value="<%= snack.priceSnack %>" id="price-snack" placeholder="Gía bánh">
+            </div>
+            <div class="form-group">
+                <label for="image-snack">Chọn hình bánh mới</label>
+                <input type="file" name="imageSnack" id="image-snack">
+                <img src="/images/<%= snack.imageSnack %>" >
+            </div>
+            <div class="form-group">
+                <button type="submit" class="save">Lưu</button>
+            </div>
+        </form>
+
+        <% }) %>
+    
+    
+    </div>
+
+</body>
+</html>
+

@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+:root {
+    --primary-color: #008848;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 10px;
+    background: var(--primary-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.header .logo a {
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    color: inherit;
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+}
+
+.menu-item {
+    list-style: none;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.menu-item a span {
+    font-size: 15px;
+}
+
+.snacks {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.snack {
+    width: 25%;
+    padding: 10px;
+    border: 1px solid #eee;
+}
+
+.snack-image {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.snack-image img {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.content {
+    margin-bottom: 25px;
+}
+
+.snack-content-name {
+    font-size: 14px;
+    font-weight: 300;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.snack-content-price {
+    display: block;
+    color: #b10e0e;
+    font-size: 13.5px;
+    margin-bottom: 10px;
+}
+
+.snack-content-button {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    font-size: 15px;
+    font-weight: 300;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.snack-content-button:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.footer {
+    font-size: 18px;
+    width: 100%;
+    padding: 15px 25px;
+    text-align: center;
+    background: #90cdf4;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Admin */
+.list-snacks {
+    font-size: 20px;
+    font-weight: 550;
+    margin-bottom: 15px;
+}
+
+/*Media queries*/
+@media screen and (max-width: 1100px) {
+    .snack {
+        width: calc(100% / 3);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .snack {
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .snack {
+        width: 100%;
+    }
+}

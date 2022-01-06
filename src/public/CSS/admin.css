@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=PT+Sans&display=swap");
+
+:root {
+    --primary-color: #008848;
+    --dark: #2b3d42;
+    --border: #dee2e6;
+    --border-btn: #edf2f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+    /* font-family: 'PT Sans', sans-serif; */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.title {
+    padding: 20px;
+    font-weight: 300;
+    margin-bottom: 25px;
+    text-align: center;
+    background: #06d6a0;
+}
+
+.new-snack {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid var(--border);
+    margin-bottom: 20px;
+    text-decoration: none;
+    box-shadow: 2.5px 2.5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.new-snack span {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.new-snack i {
+    color: orange;
+    font-size: 20px;
+}
+
+.table {
+    border-spacing: 0;
+}
+
+.table td,
+.table th {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.table td:last-child {
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.table th {
+    border: 1px solid var(--border);
+    background: var(--dark);
+    border-color: #32383e;
+    color: #fff;
+}
+
+.table td img {
+    width: 100px;
+    object-fit: cover;
+}
+
+.button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    text-align: center;
+    padding: 5px 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.button-update {
+    margin-right: 10px;
+    background: -webkit-linear-gradient(#a1c4fd, #c2e9fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.button-delete {
+    padding: 10px 15px;
+    background: -webkit-linear-gradient(#ff9a9e, #fad0c4, #fad0c4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

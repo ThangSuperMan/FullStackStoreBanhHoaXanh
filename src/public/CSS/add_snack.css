@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=PT+Sans&display=swap');
+
+body {
+    font-family: 'Barlow', sans-serif;
+/* font-family: 'PT Sans', sans-serif; */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.new-snack {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #dee2e6;
+    margin-bottom: 20px;
+    text-decoration: none;
+    box-shadow: 2.5px 2.5px 5px rgba(0,0,0,0.1);
+}
+
+.form {
+    width: 500px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    padding-bottom: 2px;
+    font-size: 19px;
+    color: #333;
+}
+
+.form-group input[type="text"] {
+    padding: 5px 10px;
+    width: 100%;
+    border: 1px solid #dee2e6;
+}
