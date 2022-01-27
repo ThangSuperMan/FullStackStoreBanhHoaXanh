@@ -20,7 +20,7 @@ export function get500(
 	res.status(error.status || 500);
 	res.json({
 		error: {
-			message: error.message,
-		},
+			message: error.message
+		}
 	});
 }

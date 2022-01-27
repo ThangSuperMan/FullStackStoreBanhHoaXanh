@@ -69,8 +69,6 @@ export async function updateSnackPage(
 	next: NextFunction
 ) {
 	const id: any = req.params.snackId;
-	console.log(id);
-	//if (id) {
 	try {
 		const [snack] = await Snack.fetchSnackById(id);
 		const data = snack;
@@ -84,7 +82,6 @@ export async function updateSnackPage(
 		}
 		next(e);
 	}
-	//}
 }
 
 export async function editSnack(
@@ -92,7 +89,6 @@ export async function editSnack(
 	res: Response,
 	next: NextFunction
 ) {
-	console.log("edit snack method controller");
 	const newInfoSnack: TypeSnack = {
 		id: req.body.snackId,
 		nameSnack: req.body.nameSnack,

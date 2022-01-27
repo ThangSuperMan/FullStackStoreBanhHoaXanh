@@ -19,9 +19,3 @@ export async function homepage(
 	}
 }
 
-const obj = {};
-console.log(`Hello`);
-
-export function home() {
-	console.log("");
-}
