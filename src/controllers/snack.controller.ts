@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
 import Snack from "../models/snack.model";
-import multer, { FileFilterCallback } from "multer";
+import multer from "multer";
 import path from "path";
 
 export function pageAddSnack(req: Request, res: Response, next: NextFunction) {

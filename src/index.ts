@@ -8,7 +8,6 @@ import * as errorController from "./controllers/error.controller";
 
 const app = express();
 var port = config.port || 5000;
-
 // Setup getting data form from html
 app.use(express.urlencoded({ extended: true }));
 
@@ -18,7 +17,6 @@ app.use(express.static("src/public"));
 // Configure Express to uses EJS
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
-
 app.use("/", homeRouter);
 
 app.use("/admin", adminRouter);
@@ -28,7 +26,6 @@ app.use("/admin", adminRouter);
 app.use("/admin/add_snack", addSnackPage);
 
 app.use(errorController.get404);
-
 app.use(errorController.get500);
 
 app.listen(port, () => {
