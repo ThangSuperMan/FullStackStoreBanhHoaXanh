@@ -61,7 +61,7 @@ body {
 
 .snacks {
     display: flex;
-    align-items: center;
+    /*align-items: center;*/
     flex-wrap: wrap;
 }
 
@@ -104,7 +104,7 @@ body {
     display: block;
     width: 100%;
     background-color: transparent;
-
+    margin-top: auto;
     padding: 10px 12px;
     text-align: center;
     text-decoration: none;

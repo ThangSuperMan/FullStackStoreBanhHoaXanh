@@ -5,7 +5,7 @@ import homeRouter from "./routes/home.router";
 import adminRouter from "./routes/admin.router";
 import addSnackPage from "./routes/snack.router";
 import * as errorController from "./controllers/error.controller";
-import dotenv from "dotenv";
+//import dotenv from "dotenv";
 
 const app = express();
 var port = config.port || 5000;
